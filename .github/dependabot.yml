@@ -1,0 +1,126 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /apps/www
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/config-full
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/config-invalid
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/config-jsx
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/config-none
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/config-partial
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/config-ui
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/next-app-js
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/next-app-src
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/next-app
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/next-pages-src
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/next-pages
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/next-src
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/next
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/project-bun
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/project-npm
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/project-pnpm
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/project-src
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/project-yarn
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/project
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cli/test/fixtures/t3-app
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /templates/next-template
+    schedule:
+      interval: weekly
