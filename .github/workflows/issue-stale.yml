@@ -6,12 +6,20 @@ on:
     # This runs every day 20 minutes before midnight: https://crontab.guru/#40_23_*_*_*
     - cron: "40 23 * * *"
 
+permissions:
+  contents: read
+
 jobs:
   stale:
     runs-on: ubuntu-latest
     if: github.repository_owner == 'shadcn-ui'
     steps:
-      - uses: actions/stale@v4
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@ab7a9404c0f3da075243ca237b5fac12c98deaa5 # v2.19.3
+        with:
+          egress-policy: audit
+
+      - uses: actions/stale@a20b814fb01b71def3bd6f56e7494d667ddf28da # v4.1.1
         id: stale-no-repro
         name: "Close stale issues with no reproduction"
         with:
